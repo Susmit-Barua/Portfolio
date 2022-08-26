@@ -6,8 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="heading-1">Portfolio</h1>
+    <div class="container">
+      <div class="header">
+        <img src="./assets/logo.png" alt="#" class="logo" />
+
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="./assets/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <div class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./assets/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="./assets/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">13</span>
+          </div>
+          <div class="user-nav__user">
+            <img src="./assets/user.jpg" alt="" class="user-nav__user-photo" />
+            <span class="user-nav__user-name">Susmit</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <nav class="sidebar">navigation</nav>
+        <main class="hotel-view">hotel view</main>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,112 @@
+////////////////////////////////
+/// logo
+.logo {
+  height: 3.5rem;
+  margin-left: 2rem;
+}
+
+////////////////////////////////
+/// search
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-light-2);
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
+    width: 90%;
+    margin-right: -3.25rem;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      background-color: var(--grey-light-2);
+      width: 100%;
+    }
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: inherit;
+    }
+  }
+  &__input:focus + &__button {
+    background-color: var(--grey-light-2);
+  }
+  &__button {
+    border: none;
+    background-color: var(--grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--grey-dark-1);
+  }
+}
+
+////////////////////////////////
+/// user navigation
+
+.user-nav {
+  background-color: aqua;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+
+  & > * {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  & > *:hover {
+    background-color: var(--grey-light-3);
+  }
+  &__icon-box {
+    position: relative;
+  }
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  &__notification {
+    font-size: 0.8rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    background-color: var(--color-primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__user {
+    // height: 3.75rem;
+    // border-radius: 50%;
+  }
+  &__user-name {
+  }
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+}
