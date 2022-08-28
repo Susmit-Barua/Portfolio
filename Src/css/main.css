@@ -178,3 +178,25 @@ body {
   text-align: center;
   padding: 1rem;
   color: var(--grey-light-1); }
+
+.gallery {
+  display: flex; }
+  .gallery__photos {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-dark-1); }
+  .overview__heading {
+    font-size: 2.2rem;
+    font-weight: 300;
+    padding: 1.75rem 1.75rem; }
+  .overview__stars {
+    display: flex;
+    margin-right: auto; }
+  .overview__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
