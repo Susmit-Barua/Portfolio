@@ -24,6 +24,21 @@
 }
 .hotel-view {
   flex: 1;
-  background-color: burlywood;
+  background-color: var(--grey-light-1);
   height: 80rem;
+}
+
+.details {
+  display: flex;
+  background-color: var(--grey-light-2);
+  padding: 4rem;
+}
+.description {
+  flex: 0 0 60%;
+  background-color: coral;
+  margin-right: 4rem;
+}
+.user-reviews {
+  flex: 1;
+  background-color: antiquewhite;
 }
