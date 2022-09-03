@@ -62,13 +62,13 @@ body {
   background-color: var(--grey-light-1); }
 
 .details {
+  font-size: 1.4rem;
   display: flex;
   background-color: var(--grey-light-2);
   padding: 4rem; }
 
 .description {
   padding: 4rem;
-  font-size: 1.5rem;
   flex: 0 0 60%;
   background-color: #fff;
   margin-right: 4rem;
@@ -76,7 +76,9 @@ body {
 
 .user-reviews {
   flex: 1;
-  background-color: antiquewhite; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .logo {
   height: 3.5rem;
@@ -249,8 +251,13 @@ body {
   background-color: transparent;
   display: inline-block;
   cursor: pointer; }
+  .btn-inlinespan {
+    margin-left: 3px; }
   .btn-inline:hover {
     color: var(--grey-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 8px;
+      transition: margin-left 0.2s; }
   .btn-inline:focus {
     transition: all 0.2s;
     animation: pulsate 1s infinite; }
@@ -306,3 +313,86 @@ body {
     border: 3px solid #fff; }
     .recommend__photos:not(:last-child) {
       margin-right: -1.5rem; }
+
+.review {
+  background-color: white;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative; }
+  .review__text {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10; }
+  .review__user {
+    display: flex;
+    align-items: center; }
+  .review__photo {
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-right: 2rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin-right: auto; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem; }
+  .review__user-data {
+    font-size: 1rem;
+    color: var(--grey-dark-3); }
+  .review__rating {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review::before {
+    content: "\201C";
+    top: -3rem;
+    left: -1rem;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--grey-light-1);
+    font-family: sans-serif;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden; }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  overflow: hidden; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
